@@ -27,4 +27,4 @@ def predict():
 
 if __name__ == '__main__':
     bootstrap.init_app(app)  # Initialize bootstrap
-    app.run(debug=True)
+    app.run()
