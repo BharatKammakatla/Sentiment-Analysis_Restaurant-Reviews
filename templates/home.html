@@ -7,18 +7,23 @@
         <div class="row justify-content-center">
             <div class="col-md-7">
                 <p class="lead text-white-50">
-                    Write your review below, and ML alogrithm will automatically predict whether its a Positive or Negative review !
+                    Write your review below, and ML alogrithm will automatically predict whether its a Positive or
+                    Negative review !
                 </p>
             </div>
+        </div>
+        <div class="row justify-content-center">
             <div class="col-md-7">
                 <form action="{{ url_for('predict') }}" method="POST">
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Enter review here . . ."></textarea>
+                        <textarea class="form-control" name="message" rows="5"
+                                  placeholder="Enter review here . . ."></textarea>
                     </div>
                     <button type="submit" class="btn btn-dark">Submit</button>
                 </form>
             </div>
         </div>
+        <br>
     </div>
 </div>
 

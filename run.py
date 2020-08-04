@@ -6,9 +6,9 @@ import pickle
 classifier = pickle.load(open('restaurant-sentiment-mnb-model.pkl', 'rb'))
 tf = pickle.load(open('tf-transform.pkl', 'rb'))
 
-bootstrap = Bootstrap()
-app = Flask(__name__)
 
+app = Flask(__name__)
+bootstrap = Bootstrap(app)
 
 @app.route('/')
 def home():
@@ -26,5 +26,5 @@ def predict():
 
 
 if __name__ == '__main__':
-    bootstrap.init_app(app)  # Initialize bootstrap
+    #bootstrap.init_app(app)  # Initialize bootstrap
     app.run()
