@@ -7,11 +7,11 @@
         <!-- Result -->
         <div class="row justify-content-center">
             <div class="col-md-4">
-                {% if prediction==1 %}
-                <img src="{{ url_for('static', filename='img/happy-smiley.webp') }}" class="img-fluid" alt="...">
+                {% if prediction == 1 %}
+                <img src="{{ url_for('static', filename='img/happy-smiley.svg') }}" class="img-fluid" alt="...">
                 <p class="card-text alert alert-success">Great! This is a POSITIVE Review</p>
-                {% elif prediction==0 %}
-                <img src="{{ url_for('static', filename='img/sad-smiley.webp') }}" class="img-fluid" alt="...">
+                {% elif prediction == 0 %}
+                <img src="{{ url_for('static', filename='img/sad-smiley.svg') }}" class="img-fluid" alt="...">
                 <p class="card-text alert alert-danger">Oops! This is a NEGATIVE Review.</p>
                 {% endif %}
             </div>
