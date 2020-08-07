@@ -6,6 +6,7 @@ from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 nltk.download('vader_lexicon')
+nltk.download('stopwords')
 
 # Load the trained RandomForestClassifier and TFID vectorizer models from local
 ps = PorterStemmer()
